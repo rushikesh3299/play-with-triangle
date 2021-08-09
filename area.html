@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TriangleGame</title>
+</head>
+<body>
+    <div class="main-container area-container">
+        <div class="back-btn-div"><button onclick="history.back()">Go Back</button></div>
+        <h2>Calculate Area</h2>
+        <h3>Select an option below as per the data you have for a triangle</h3>
+        <div class="select-area-box">
+            <input type="radio" class="area1" name="area-select" value="a" onclick="areaFun(this.value)">  If you have base and height <br>
+            <input type="radio" class="area2" name="area-select" value="b" onclick="areaFun(this.value)">  If you have length of 3 sides <br>
+            <input type="radio" class="area3" name="area-select" value="c" onclick="areaFun(this.value)">  If you have length of 2 sides and included angle <br>
+        </div>
+
+        <div class="area1-box">
+            <img src="areabh.png" alt="loading..." width="60%"><br>
+            Bace  <input type="number" class="bace inp-box" /><br>
+            Height<input type="number" class="height inp-box" /><br>
+            <div class="submit-btn-div"><button class="submit-area1" onclick="subArea1()">Submit</button></div>
+            <h2><span class="result1">The Area is: </span><span class="area1-result"></span></h2>
+        </div>
+
+        <div class="area2-box">
+            <img src="areatri.png" alt="loading..." width="60%"><br>
+            Side 1<input type="number" class="side1 inp-box" /><br>
+            side 2<input type="number" class="side2 inp-box" /><br>
+            side 3<input type="number" class="side3 inp-box" /><br>
+            <div class="submit-btn-div"><button class="submit-area2" onclick="subArea2()">Submit</button></div>
+            <h2><span class="result2">The Area is: </span><span class="area2-result"></span></h2>
+        </div>
+
+        <div class="area3-box">
+            <img src="areasa.png" alt="loading..." width="50%"><br>
+            b<input type="number" class="b inp-box" /><br>
+            c<input type="number" class="c inp-box" /><br>
+            <<input type="number" class="angle inp-box" /><br>
+            <div class="submit-btn-div"><button class="submit-area3" onclick="subArea3()">Submit</button></div>
+            <h2><span class="result3">The Area is: </span><span class="area3-result"></span></h2>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+*, html{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main-container{
+    background-color: aqua;
+    max-width: 565px;
+    height: 100vh;
+    margin: auto auto;
+    text-align: center;
+}
+
+.main-container.main-container-left{
+    height: auto;
+}
+
+.main-container-left{
+    text-align: left;
+    padding: 1rem;
+}
+
+.main-container-left h2{
+    text-align: center;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+
+.index-container .boxes{
+    position: relative;
+    top: 10%;
+}
+
+.index-container .boxes h2{
+    margin-bottom: 2rem;
+}
+.index-container .boxes a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10%;
+    padding: 1rem;
+    border: 3px solid black;
+}
+.inp-box{
+    width: 30%;
+    height: 5%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: .5rem;
+}
+
+.back-btn-div, .submit-btn-div{
+    text-align: center;
+}
+
+.back-btn-div button, .submit-btn-div button{
+    border-radius: 10px;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+.true-angle, .false-angle, .result-hypo{
+    display: none;
+}
+
+.area1-box, .area2-box, .area3-box{
+    display: none;
+}
+
+.select-area-box{
+    padding: 1rem 15%;
+    text-align: left;
+}
+
+.result1, .result2, .result3, .result-quiz{
+    display: none;
+}
+
+.question{
+    background-color: aquamarine;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}

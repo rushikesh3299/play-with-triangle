@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TriangleGame</title>
+</head>
+<body>
+    <div class="main-container angle-container">
+        <div class="back-btn-div"><button onclick="history.back()">Go Back</button></div>
+        <h2>Enter the angles in below input boxes and we will tell you if those angles make a Triangle</h2>
+        <img src="triangle.png" alt="loading..." width="90%"><br>
+        Angle 1<input type="number" class="angle1 inp-box" /><br>
+        Angle 2<input type="number" class="angle2 inp-box" /><br>
+        Angle 3<input type="number" class="angle3 inp-box" /><br>
+        <div class="submit-btn-div"><button class="submit-angle" onclick="submitAngle()">Submit</button></div>
+        <h3 class="true-angle">Yuhu! these angles can make a triangle</h3>
+        <h3 class="false-angle">Oops! these angles cannot make a triangle</h3>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TriangleGame</title>
+</head>
+<body>
+    <div class="main-container hypo-container">
+        <div class="back-btn-div"><button onclick="history.back()">Go Back</button></div>
+        <img src="hypoimg.png" alt="" width="50%">
+        <h2>Enter the lengths of sides of right angle triangle</h2>
+        Side 1<input type="number" class="side1 inp-box" /><br>
+        Side 2<input type="number" class="side2 inp-box" /><br>
+        <div class="submit-btn-div"><button class="submit-hypo" onclick="submitHypo()">Submit</button></div>
+        <h2><span class="result-hypo">The Hypoteneous is: </span><span class="hypo-result"></span></h2>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

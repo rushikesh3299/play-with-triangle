@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TriangleGame</title>
+</head>
+<body>
+    <div class="main-container main-container-left ">
+        <div class="back-btn-div"><button onclick="history.back()">Go Back</button></div>
+        <h2>Quiz</h2>
+        <form action="" class="quiz-form">
+            <div class="question">
+                <p>1. If a triangle has angles 135<span>&#176;</span>, 15<span>&#176;</span>, 30<span>&#176;</span>. Is it an obtuse triangle?</p>
+                <input type="radio" class="q11" name="q1" value="true">  True 
+                <input type="radio" class="q12" name="q1" value="false">  False
+            </div>
+            <div class="question">
+                <p>2. If a triangle has angles 115<span>&#176;</span>, 25<span>&#176;</span>, 40<span>&#176;</span>. Is it an acute triangle?</p>
+                <input type="radio" class="q21" name="q2" value="true">  True 
+                <input type="radio" class="q22" name="q2" value="false">  False
+            </div>
+            <div class="question">
+                <p>3. If a triangle has angles 90<span>&#176;</span>, 60<span>&#176;</span>, 30<span>&#176;</span>. Is it a right angle triangle?</p>
+                <input type="radio" class="q31" name="q3" value="true">  True 
+                <input type="radio" class="q32" name="q3" value="false">  False
+            </div>
+            <div class="question">
+                <p>4. If a triangle has 2 sides with equal lengths and 75<span>&#176;</span> angle between them. What is the type of triangle?</p>
+                <input type="radio" class="q41" name="q4" value="equilateral">  Equilateral    
+                <input type="radio" class="q42" name="q4" value="isosceles">  Isosceles
+                <input type="radio" class="q43" name="q4" value="rightangle">  Right Angle traingle
+            </div>
+            <div class="question">
+                <p>5. The perimeter of an equilateral triangle is 15cm. What is the length of one side?</p>
+                <input type="radio" class="q51" name="q5" value="15cm">  15cm 
+                <input type="radio" class="q52" name="q5" value="45cm">  45cm
+                <input type="radio" class="q53" name="q5" value="5cm">  5cm
+            </div>
+        </form>
+        <div class="submit-btn-div"><button class="submit-quiz" onclick="submitQuiz()">Submit</button></div>
+        <h2><span class="result-quiz">Your Final Score is : </span><span class="quiz-result"></span></h2>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
